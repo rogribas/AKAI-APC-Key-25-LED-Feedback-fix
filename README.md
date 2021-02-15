@@ -30,7 +30,7 @@ You have to use a virtual midi port (in my case I use the Mac OSX default "IAC D
 
 ![plot](./ableton_config.png)
 
-## Mac OSX .plist (in order to run it always in background and forget about it)
+## Mac OSX .plist (in order to run it in background and forget about it)
 
 I've added a .plist config that should be placed in ```~/Library/LaunchAgents/``` folder in order run the script when the computer starts and keep it running in background.
 
