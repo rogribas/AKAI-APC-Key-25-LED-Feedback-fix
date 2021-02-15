@@ -32,9 +32,13 @@ You have to use a virtual midi port (in my case I use the Mac OSX default "IAC D
 
 ## Mac OSX .plist (in order to run it in background and forget about it)
 
-I've added a .plist config that should be placed in ```~/Library/LaunchAgents/``` folder in order run the script when the computer starts and keep it running in background.
+I've added a .plist config that should be placed in ```~/Library/LaunchAgents/``` folder in order run the script when the computer starts and keep it running in background.</br>
+It must be updated with the virtual environment python binary path (can be created using ```virtualenv midi_apc_env; pip install -r requirements.txt```) and the  path of the ```apc_led_feedback.py``` script.
 
-## Some links to sources that helped me understand and fix this problem
+
+## Some links from sources that helped me understand and fix this problem
 
 https://www.youtube.com/watch?v=RYMRiGQtTz0
 https://forum.ableton.com/viewtopic.php?t=149974
+
+## NOTE: I do not have time to provide any support on this
