@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd >
+<plist version="1.0">
+  <dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>Label</key>
+    <string>rogribas.apc_led_feedback</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string> ### PATH TO THE PYTHON EXECUTABLE OF THE VIRTUALENV, example:"/Users/rogribas/Documents/AKAI-APC-Key-25-LED-Feedback-fix/midi_apc_env/bin/python" ### </string>
+        <string> ### PATH TO THE PYTHON SCRIPT, example: "/Users/rogribas/Documents/Projectes/AKAI-APC-Key-25-LED-Feedback-fix/apc_led_feedback.py" ### </string>
+    </array>
+    <key>UserName</key>
+    <string>root</string>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/apc_led_feedback.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/apc_led_feedback.stderr</string>
+
+  </dict>
+</plist>
