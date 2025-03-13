@@ -24,11 +24,23 @@ Ableton Live sends the following message when the midi mapped control is OFF:</b
 
 This python script detects when this type of messages are sent by Ableton Live to the Midi Remote Output Ports using a virtual midi port, then I translate those to midi messages that makes the APC Key 25 change the led color correctly:<br/>```NOTE_ON + <note_of_the_button> + 3 (RED COLOR)```
 
+## Installation
+
+* Download repo
+* Create python env with the requirements.txt
+* Activate IAC driver on Midi Studio in Mac
+* Update the .plist with the env and script paths
+* Copy the .plist to ~/Library/LaunchAgents
+* Configure the ableton midi following the screenshot
+* Reboot(?) and enjoy
+
+
 ## Ableton Live configuration
 
 You have to use a virtual midi port (in my case I use the Mac OSX default "IAC Driver (Bus 1)") and enable "Remote" in its Output port in Ableton Live's settings:
 
-![plot](./ableton_config.png)
+![plot](./screenshot_ableton.png)
+![plot](./screenshot_midi_mac.png)
 
 ## Mac OSX .plist (in order to run it in background and forget about it)
 
